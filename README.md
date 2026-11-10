@@ -2,8 +2,6 @@
 
 A Spring Boot 4.1.0 + Spring Integration 7.0 sample project combining an **Order Processing Pipeline** over HTTP and a **File Polling & Processing** pipeline, demonstrating Java DSL with content-based routing, publish-subscribe channels, and wire tap patterns.
 
-Dev.to article: https://dev.to/ykpraveen/building-an-order-processing-pipeline-with-spring-integration-http-file-polling-i6a
-
 ## Prerequisites
 
 - Java 21+
