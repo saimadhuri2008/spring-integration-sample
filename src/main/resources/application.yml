@@ -1,0 +1,30 @@
+spring:
+  application:
+    name: order-flow
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/orderflow
+    driver-class-name: org.postgresql.Driver
+    username: postgres
+    password: postgres
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+
+server:
+  port: 8080
+
+order:
+  poller:
+    delay: 5000
+  routing:
+    express-threshold: 100
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,prometheus
